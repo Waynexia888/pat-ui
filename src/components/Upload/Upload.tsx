@@ -61,6 +61,7 @@ export const Upload: FC<UploadProps> = (props) => {
             })
         })
     }
+    
     const fileInput = useRef<HTMLInputElement>(null)
     
     const handleClick = () => {
@@ -147,7 +148,7 @@ export const Upload: FC<UploadProps> = (props) => {
             }
         })
     }
-    console.log(fileList)
+    // console.log(fileList)
 
     return (
         <div>

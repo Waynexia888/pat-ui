@@ -28,7 +28,6 @@ export const UploadList: FC<UploadListProps> = (props) => {
                             <span className="file-status">
                                 {(item.status === 'uploading' || item.status === 'ready') 
                                 && <Icon name="spinner" size="mini" color="blue" loading />
-                                
                                 }
                                 {(item.status === 'success') 
                                 && <Icon name="check" size="mini" color="teal" />
@@ -39,7 +38,7 @@ export const UploadList: FC<UploadListProps> = (props) => {
                             </span>
                         </div>
                         <div className="delete-icon">
-                            <span onClick={() => { onRemove(item) }} className="file-actions">
+                            <span onClick={() => { onRemove(item) }} className="file-delete">
                                 <Icon name="trash" size="mini" color="black" />
                         </span>
                         </div>

@@ -21,6 +21,10 @@ const SimpleUpload = () => {
             onProgress={action('progress')}
             onSuccess={action('successful uploaded')}
             onError={action('error message')}
+            // accept=".pdf"
+            // multiple={true}
+            // defaultFileList={defaultFileList}
+            // beforeUpload={checkFileSize}
         >
         </Upload>
     )
@@ -64,7 +68,7 @@ const RestrictFileTypes = () => {
     )
 }
 
-const SelectMultipleFiles = () => {
+const UploadMultipleFiles = () => {
     return (
         <Upload 
             action="https://jsonplaceholder.typicode.com/posts" 
@@ -85,5 +89,5 @@ storiesOf('Upload', module)
     .add('Upload with Lists', UploadWithLists)
     .add('Restrict File Type', RestrictFileTypes, 
     {info: {text: 'Allows you to define which file types are available to upload. Here we have jpg, jpeg, doc and docx available to be selected.'}})
-    .add('Select Multiple File', SelectMultipleFiles,
+    .add('Upload Multiple Files', UploadMultipleFiles,
     {info: {text: 'Allows you to select multiple files at once.'}})

@@ -17,17 +17,16 @@
 }
 
 .upload-list-item {
-    transition: all .5s cubic-bezier(.55, 0, .1, 1);
+    display: flex;
+    flex-direction: row;
     font-size: 14px;
     line-height: 1.8;
     margin-top: 5px;
     box-sizing: border-box;
     border-radius: 4px;
     min-width: 200px;
-    display: flex;
-    flex-direction: row;
+    transition: all .5s cubic-bezier(.55, 0, .1, 1);
     
-
     &:first-child {
         margin-top: 10px;
     }
@@ -43,11 +42,15 @@
 }
 
 .file-name-error {
-    color: red;
+    color: $red;
 
     svg {
-        color: red;
+        color: $red;
     }
+}
+
+.file-name-success {
+    color: teal;
 }
 
 .file-status {
@@ -55,7 +58,7 @@
     margin-right: 10px;
 }
 
-.file-actions {
+.file-delete {
     display: inline-block;
     margin-left: 10px;
     cursor: pointer;
