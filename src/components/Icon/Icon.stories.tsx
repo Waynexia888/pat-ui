@@ -43,3 +43,11 @@ export const DiffColorIcon = () => (
 );
 
 export const LoadingIcon = () => <Icon name="spinner" loading />;
+
+export const CheckedIcon = () => <Icon name="check" />
+
+export const TrashIcon = () => <Icon name="trash" />
+
+export const UploadIcon = () => <Icon name="upload" />
+
+export const FileAltIcon = () => <Icon name="file-alt" />

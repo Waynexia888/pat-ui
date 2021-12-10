@@ -1,0 +1,70 @@
+.upload-icon {
+    margin-right: 10px;
+}
+
+.upload-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: $gray-200;
+    width: 700px;
+    
+}
+
+.upload-list-item {
+    transition: all .5s cubic-bezier(.55, 0, .1, 1);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    
+
+    &:first-child {
+        margin-top: 10px;
+    }
+}
+
+.file-name {
+    margin-left: 5px;
+    margin-right: auto;
+
+    svg {
+        margin-right: 5px;
+    }
+}
+
+.file-name-error {
+    color: red;
+
+    svg {
+        color: red;
+    }
+}
+
+.file-status {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.file-actions {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    background-color: $gray-200;
+    border-radius: 5px;
+    width: 25px;
+    padding-right: 10px;
+    margin-left: 2px;
+}
