@@ -19,7 +19,7 @@ export const UploadList: FC<UploadListProps> = (props) => {
         <ul className="upload-list">
             {fileList.map(item => {
                 return (
-                    <li className="upload-list-item">
+                    <li className="upload-list-item" key={item.id}>
                         <div className="container">
                             <span className={`file-name file-name-${item.status}`}>
                                 <Icon name="file-alt" size="mini" color="teal" />
